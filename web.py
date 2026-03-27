@@ -83,7 +83,7 @@ def create_app(repo_game: GameRepository,
     return application
 
 app = create_app(repo_player=production_repo_player,
-                            repo_game=production_repo_fsm)
+                 repo_game=production_repo_fsm)
 
 if __name__ == "__main__":
-    uvicorn.run("web:app_production")
+    uvicorn.run("web:app")
